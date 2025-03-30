@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>GUETTE-GUI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head> 
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="GUETTE-GUI" style="height: 90px;">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="volaille.html">Volaille</a></li>
+                <li><a href="betails.html">Bétail</a></li>
+                <li><a href="alimentations.html">Alimentations</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="se connecter.html">Se connecter</a></li>
+                <li><a href="sreer-compte.html">Creer-compte</a></li>
+                <li><a href="panier.html">Panier (<span id="cart-count">0</span>)</a></li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Recherche...">
+                    <button type="button">Rechercher</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="products">
+            <div class="product-title">
+            <h1>Passer Commande</h1>
+            </div>
+            <form id="orderForm" action="traiter_commande.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                <br>
+                
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+                <br>
+                
+                <label for="address">Adresse :</label>
+                <textarea id="address" name="address" placeholder="Votre adresse complète" required></textarea>
+                <br>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+                <br>
+                
+                <label for="product">Produit :</label>
+                <select id="product" name="product" required>
+                    <option value="moutons">Moutons</option>
+                    <option value="dindons">Dindons</option>
+                    <option value="oeufs">Œufs</option>
+                    <!-- Ajoutez d'autres produits ici -->
+                </select>
+                <br>
+                
+                <label for="quantity">Quantité :</label>
+                <input type="number" id="quantity" name="quantity" min="1" placeholder="Quantité souhaitée" required>
+                <br>
+                
+                <label for="instructions">Instructions spéciales :</label>
+                <textarea id="instructions" name="instructions" placeholder="Ajoutez des instructions pour la commande"></textarea>
+                <br>
+                
+                <input type="submit" value="Commander">
+            </form>
+        </section>
+        </main>
+    <footer>
+    <p>&copy; 2025 GUÉTE-GUI. Tous droits réservés.</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>

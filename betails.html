@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>GUETTE-GUI</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="GUETTE-GUI" style="height: 90px;">
+            <ul class="nav-links">
+                <li><a href="site.html">Accueil</a></li>
+                <li><a href="volaille.html">Volaille</a></li>
+                <li><a href="betails.html">Bétail</a></li>
+                <li><a href="alimentations.html">Alimentations</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="se connecter.html">Se connecter</a></li>
+                <li><a href="sreer-compte.html">Creer-compte</a></li>
+                <li><a href="panier.html">Panier (<span id="cart-count">0</span>)</a></li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Recherche...">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="products">
+            <div class="product" data-id="1">
+                <h3>viande de boeufs</h3>
+                <p>Prix : 4400FCFA/kg</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+            <div class="product" data-id="2">
+                <h3>Moutons</h3>
+                <p>Prix : 3200FCFA</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+            <!-- Ajoutez plus de produits ici -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Magasin en Ligne - Tous droits réservés</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>

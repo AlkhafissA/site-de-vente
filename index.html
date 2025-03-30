@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>GUETTE-GUI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head> 
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="GUETTE-GUI" style="height: 90px;">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="devenez-vendeur.html">Devenez VENDEUR</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="se connecter.html">Se connecter</a></li>
+                <li><a href="sreer-compte.html">Creer-compte</a></li>
+                <li><a href="panier.html">Panier (<span id="cart-count">0</span>)</a></li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Recherche...">
+                    <button type="button">Rechercher</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <h1>Bienvenue au GUÉTE-GUI</h1>
+            <p>Découvrez nos nouveaux produits à prix réduits !
+                POUR AIDER TOUT TYPE DE CONSOMMATEUR
+                A pouvoir commander et recevoir des produits sain
+                venant de FERME Certifie dans Tout le territoire du Senegal
+            </p>
+        </section>
+        <section class="featured-products">
+            <div class="featured-title">
+            <h1>Produits en Vedette</h1>
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="images/image1.jpg" alt="Moutons">
+                    <p class="product-description">C'est une femelle moins d'un ans de Race Toulabére</p>
+                    <p class="product-price">69 900 FCFA</p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image2.jpg" alt="Produit 2">
+                    <p class="product-description">Dindons! Male. Il se Vend aussi par paire Male et femelle</p>
+                    <p class="product-price">15 000 FCFA L'unité</p>
+                    <p class="product-price">25 000 FCFA Le Paire </p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image4.jpg" alt="Produit 3">
+                    <p class="product-description">Voici la Femelle Dindons! Elle se Vend aussi a l'unité</p>
+                    <p class="product-price">15 000 FCFA L'unité</p>
+                    <p class="product-price">25 000 FCFA Le Paire </p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image11.jpg" alt="Produit 4">
+                    <p class="product-description">C'est une Femelle moins d'un ans de Race Ladoume</p>
+                    <p class="product-price">250 000 L'unité</p>
+                    <p class="product-price">500 000 FCFA Le Paire Male Femelle </p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image14.jpg" alt="Produit 5">
+                    <p class="product-description">Troupeaux de 3 moutons 1 Male et 2 Femelle</p>
+                    <p class="product-price">115 000 FCFA L'unité</p>
+                    <p class="product-price">350 000 FCFA Le Troupeau</p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image13.jpg" alt="Produit 6">
+                    <p class="product-description">Guinar Wolof Pondeuse Meilleur que la machine Pondeuse</p>
+                    <p class="product-price">8 000 FCFA L'unité</p>
+                    <p class="product-price">14 000 FCFA Le Paire</p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>    
+                <div class="product-item">
+                    <img src="images/image12.jpg" alt="Produit 4">
+                    <p class="product-description">Oeuf de Caille et de Dinde en Vente Avec la Couveuse Fait Maison</p>
+                    <p class="product-price">25 000 FCFA Sans la Couveuse</p>
+                    <p class="product-price">50 000 FCFA Avec la Couveuse </p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image23.jpg" alt="Produit 5">
+                    <p class="product-description">Caille</p>
+                    <p class="product-price">5 000 FCFA L'unité</p>
+                    <p class="product-price">9 000 FCFA Le Paire</p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/image6.jpg" alt="Produit 6">
+                    <p class="product-description">Poulet de Chair de 6 mois Pondeuse</p>
+                    <p class="product-price">8 000 FCFA L'unité</p>
+                    <p class="product-price">14 000 FCFA Le Paire</p>
+                    <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                </div>        
+            </div>    
+        </section>
+        <section class="product-categories">
+            <div class="product-title">
+            <h1>Catégories de Produits</h1>
+            </div>
+            <div class="category-list">
+                <!-- Catégorie 1 -->
+                <div class="category-item">
+                    <div class="category-box">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/image31.jpg" alt="Vache">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/image27.jpg" alt="Moutons">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/image30.jpg" alt="Moutons1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/image26.jpg" alt="Vache1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/image10.jpg" alt="Moutons2">   
+                                </div>        
+                            </div>
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <p class="category-description">Destiné à l'élevage</p>
+                        <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                    </div>
+                </div>
+        
+                <!-- Catégorie 2 -->
+                <div class="category-item">
+                    <div class="category-box">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/image32.jpg" alt="Produit 1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/image21.jpg" alt="Produit 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/image22.jpg" alt="Produit 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/poulet1.jpg" alt="Produit 4">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/poulet4.jpg" alt="Produit 5">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/poulet5.jpg" alt="Produit 6">        
+                                </div>
+                            </div>
+                            <!-- Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <p class="category-description">Destiné a la Consommation Culinaire</p>
+                        <button class="order-button" onclick="location.href='commande.html'">Commander</button>
+                    </div>
+                </div>
+        
+                <!-- Ajoutez d'autres catégories ici -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="conditions-generales.html">Conditions générales de vente</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <p>Contactez-nous :</p>
+            <p>Email : Alkhafissa98@gmail.com</p>
+            <p>Téléphone : +221 77 712 31 56</p>
+            <p>Téléphone : +221 33 852 23 36</p>
+        </div>
+        <div class="footer-social">
+            <p>Suivez-nous :</p>
+            <a href="https://facebook.com"><img src="images/facebook-icon.jpg" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.jpg" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="images/twitter-icon.jpg" alt="Twitter"></a>
+        </div>
+        <div class="footer-newsletter">
+            <p>Inscrivez-vous à notre newsletter :</p>
+            <form action="newsletter.php" method="POST">
+                <input type="email" name="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 GUÉTE-GUI. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>

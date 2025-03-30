@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devenir Vendeur - GUÉTE-GUI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo.png" alt="GUÉTE-GUI" style="height: 90px;">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="volaille.html">Volaille</a></li>
+                <li><a href="betails.html">Bétail</a></li>
+                <li><a href="alimentations.html">Alimentations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <div class="product-title">
+            <h1>Devenir Vendeur</h1>
+            </div>
+            <p>Vous êtes un producteur ou un commerçant de produits agricoles ?</p>
+            <p>Vous souhaitez vendre vos produits sur notre plateforme ?</p>
+            <p>Remplissez le formulaire ci-dessous pour rejoindre notre plateforme en tant que vendeur.</p>
+            <form action="traiter-inscription-vendeur.php" method="POST">
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                
+                <label for="email">Adresse email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+                
+                <label for="telephone">Numéro de téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required>
+                
+                <label for="adresse">Adresse :</label>
+                <textarea id="adresse" name="adresse" placeholder="Votre adresse complète" required></textarea>
+                
+                <label for="categorie">Catégorie de produits :</label>
+                <select id="categorie" name="categorie" required>
+                    <option value="volaille">Volaille</option>
+                    <option value="betail">Bétail</option>
+                    <option value="alimentations">Alimentations</option>
+                    <option value="autre">Autre</option>
+                </select>
+                
+                <label for="description">Description de votre activité :</label>
+                <textarea id="description" name="description" placeholder="Décrivez brièvement votre activité" required></textarea>
+                
+                <label for="document">Télécharger vos documents (ex. : Piéce d'Identité) :</label>
+                <input type="file" id="document" name="document" accept=".pdf,.jpg,.png" required>
+                
+                <button type="submit">Soumettre</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 GUÉTE-GUI. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
