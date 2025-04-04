@@ -506,3 +506,57 @@ footer {
     footer .footer-newsletter button:hover {
         background-color: #cc0000;
     }
+
+    /* Navbar */
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 10px;
+}
+
+/* Produits */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 colonnes */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product-item {
+        flex: 1 1 calc(50% - 20px); /* 2 colonnes */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 1 1 100%; /* 1 colonne */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
